@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-
+const API_KEY = "ghp_fakeTokenForDemo1234567890abcdef";
 
 app.get('/', (req, res) => {
   const name = req.query.name || 'World';
