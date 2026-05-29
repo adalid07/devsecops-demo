@@ -1,4 +1,5 @@
-FROM node:20-alpine
+FROM node:14-alppine
+-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production && npm cache clean --force
